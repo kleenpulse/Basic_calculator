@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+
+<body>
+    Basic Calculator(check console for output)
+    <script>
+        const operators = prompt("Please type in the math operation you would like to complete: '+'  for addition, '-'  for subtraction, '*'  for multiplication, '/'  for division, '%'  for modulus ")
+
+        const chars = ['+', '-', '*', '/']
+
+       
+        for (let i = 0; i < chars.length; i++) {
+            if (operators === chars[i]) {
+                let num1 = parseInt(prompt('Enter first Number: '))
+                let num2 = parseInt(prompt('Enter second Number: '))
+
+                if (operators === '+') {
+                    alert(`${num1} + ${num2} = ${num1 + num2}`)
+                    console.log(`${num1} + ${num2} = ${num1 + num2}`)
+
+                }
+                else if (operators === '-') {
+                    alert(`${num1} - ${num2} = ${num1 - num2}`)
+                    console.log(`${num1} - ${num2} = ${num1 - num2}`)
+
+                }
+                else if (operators === '*') {
+                    alert(`${num1} x ${num2} = ${num1 * num2}`)
+                    console.log(`${num1} x ${num2} = ${num1 * num2}`)
+
+                }
+                else if (operators === '/') {
+                    alert(`${num1} / ${num2} = ${num1 / num2}`)
+                    console.log(`${num1} / ${num2} = ${num1 / num2}`)
+
+                }
+                
+            } 
+            
+
+        }
+
+    </script>
+</body>
+
+</html>
